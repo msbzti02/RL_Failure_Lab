@@ -1,0 +1,68 @@
+[
+  {
+    "test": "T0.1",
+    "name": "Deterministic",
+    "passed": true,
+    "diff": 0.0
+  },
+  {
+    "test": "T0.2",
+    "name": "Random Baseline",
+    "passed": true,
+    "mean_reward": 10.555392490984813
+  },
+  {
+    "test": "T1.1",
+    "name": "Salary Trap",
+    "passed": true,
+    "switch_ratio": 0.8542063189950514,
+    "mean_burnout": 0.98
+  },
+  {
+    "test": "T2.2",
+    "name": "Sparse Reward",
+    "passed": true,
+    "dense_eval": 174.7541407471464,
+    "sparse_eval": 9.0
+  },
+  {
+    "test": "T3.1",
+    "name": "High Scale",
+    "passed": true,
+    "max_q": 1065.2559814453125
+  },
+  {
+    "test": "T3.3",
+    "name": "Collapse",
+    "passed": true,
+    "max_action": 0.9958
+  },
+  {
+    "test": "T4.1",
+    "name": "Regime Shift",
+    "passed": true,
+    "stable": 175.23268402354296,
+    "recession": 0.1646653581701914,
+    "drop": 175.06801866537276
+  },
+  {
+    "test": "T7.1",
+    "name": "Heuristic",
+    "passed": true,
+    "comparison": {
+      "dqn": 176.20233658282547,
+      "ppo": 173.53868360755905,
+      "heuristic": 34.89911761463533,
+      "random": 12.856656597587104
+    },
+    "rl_wins": true
+  },
+  {
+    "test": "T8.1",
+    "name": "Seeds",
+    "passed": true,
+    "mean": 175.30979234892757,
+    "std": 1.5753244113732747,
+    "range": 3.55837402048013
+  }
+]

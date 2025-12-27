@@ -1,0 +1,153 @@
+﻿======================================================================
+RL FAILURE & STRESS TEST SUITE
+======================================================================
+
+py : C:\Users\Next-Lev
+el\AppData\Local\Progr
+ams\Python\Python313\L
+ib\site-packages\gymna
+sium\spaces\box.py:236
+: UserWarning: 
+[33mWARN: Box low's 
+precision lowered by 
+casting to float32, 
+current 
+low.dtype=float64[0m
+At line:1 char:1
++ py scripts/stress_te
+sts.py 2>&1 | 
+Out-File -Encoding 
+utf8 experiments ...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (C:\Users\N   
+ ext-L...ype=float    
+64[0m:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  gym.logger.warn(
+C:\Users\Next-Level\Ap
+pData\Local\Programs\P
+ython\Python313\Lib\si
+te-packages\gymnasium\
+spaces\box.py:306: 
+UserWarning: 
+[33mWARN: Box high's 
+precision lowered by 
+casting to float32, 
+current 
+high.dtype=float64[0m
+  gym.logger.warn(
+Running test_T0_1_deterministic... [PASS]
+Running test_T0_2_random_baseline... [PASS]
+Running test_T1_1_salary_trap... [PASS]
+C:\Users\Next-Level\Ap
+pData\Local\Programs\P
+ython\Python313\Lib\si
+te-packages\gymnasium\
+spaces\box.py:236: 
+UserWarning: 
+[33mWARN: Box low's 
+precision lowered by 
+casting to float32, 
+current 
+low.dtype=float64[0m
+  gym.logger.warn(
+C:\Users\Next-Level\Ap
+pData\Local\Programs\P
+ython\Python313\Lib\si
+te-packages\gymnasium\
+spaces\box.py:306: 
+UserWarning: 
+[33mWARN: Box high's 
+precision lowered by 
+casting to float32, 
+current 
+high.dtype=float64[0m
+  gym.logger.warn(
+Running test_T1_2_burnout_avoidance... [PASS]
+Running test_T2_2_sparse_reward... [PASS]
+Running test_T3_1_high_reward_scale... [PASS]
+Running test_T3_3_exploration_collapse... [PASS]
+Running test_T4_1_regime_shift... [PASS]
+Running test_T6_1_train_test_split... [ERROR: name 'env' is not defined]
+Running test_T7_1_heuristic_comparison... [PASS]
+Running test_T8_1_seed_sensitivity... [PASS]
+
+======================================================================
+GENERATING REPORT
+======================================================================
+Traceback (most 
+recent call last):
+  File "C:\1 ML 2025\r
+fgredf\scripts\stress_
+tests.py", line 931, 
+in <module>
+    run_all_tests()
+    ~~~~~~~~~~~~~^^
+  File "C:\1 ML 2025\r
+fgredf\scripts\stress_
+tests.py", line 834, 
+in run_all_tests
+    generate_report(re
+sults)
+    ~~~~~~~~~~~~~~~^^^
+^^^^^^
+  File "C:\1 ML 2025\r
+fgredf\scripts\stress_
+tests.py", line 918, 
+in generate_report
+    report_path.write_
+text("\n".join(report)
+)
+    ~~~~~~~~~~~~~~~~~~
+~~~~^^^^^^^^^^^^^^^^^^
+^
+  File "C:\Users\Next-
+Level\AppData\Local\Pr
+ograms\Python\Python31
+3\Lib\pathlib\_local.p
+y", line 555, in 
+write_text
+    return PathBase.wr
+ite_text(self, data, 
+encoding, errors, 
+newline)
+           ~~~~~~~~~~~
+~~~~~~~~^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^
+  File "C:\Users\Next-
+Level\AppData\Local\Pr
+ograms\Python\Python31
+3\Lib\pathlib\_abc.py"
+, line 652, in 
+write_text
+    return 
+f.write(data)
+           
+~~~~~~~^^^^^^
+  File "C:\Users\Next-
+Level\AppData\Local\Pr
+ograms\Python\Python31
+3\Lib\encodings\cp1252
+.py", line 19, in 
+encode
+    return codecs.char
+map_encode(input,self.
+errors,encoding_table)
+[0]
+           ~~~~~~~~~~~
+~~~~~~~~~~^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode character 
+'\u03bb' in position 
+2559: character maps 
+to <undefined>
